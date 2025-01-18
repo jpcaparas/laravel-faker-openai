@@ -20,13 +20,21 @@ The package will automatically register its service provider if you're using Lar
 
 ## Configuration
 
-1. Make sure you have your OpenAI API key set in your `.env` file:
+1. Next, execute the install command:
+
+```bash
+php artisan openai:install
+```
+
+This will create a `config/openai.php` configuration file in your project, which you can modify to your needs using environment variables.
+
+2. Make sure you have your OpenAI API key set in your `.env` file:
 
 ```env
 OPENAI_API_KEY=your-api-key-here
 ```
 
-2. The package uses `gpt-3.5-turbo` model by default.
+3. The package uses `gpt-3.5-turbo` model by default.
 
 ## Usage
 
